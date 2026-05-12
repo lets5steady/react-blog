@@ -1,7 +1,7 @@
 .sectionTitle{
     width: fit-content;
-    padding-block: 0.75rem;
-    border-block: 1px solid black;
-    font-weight: 700;
-    font-size: 1.5rem;
+    padding-block: var(--space-sm);
+    border-block: 1px solid var(--text-color-black);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
 }

@@ -1,14 +1,14 @@
 .btn{
     width: 146px;
-    padding-block: 0.5rem;
-    padding-inline: 1rem;
-    background-color: #333;
-    color: #FFF;
-    font-weight: 700;
-    font-size: 15px;
-    border-radius: 1rem;
+    padding-block: var(--space-xs);
+    padding-inline: var(--space-md);
+    background-color: var(--main-color);
+    color: var(--base-color);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-sm);
+    border-radius: var(--rounded-md);
 }
 
 .btn:hover{
-    background-color: var(--accentColor);
+    background-color: var(--accent-color);
 }
