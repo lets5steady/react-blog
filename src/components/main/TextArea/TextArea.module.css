@@ -1,0 +1,4 @@
+.textArea{
+    padding: var(--space-xs);
+    border: 1px solid #333;
+}

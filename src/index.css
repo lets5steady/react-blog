@@ -58,3 +58,9 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+::placeholder{
+    color: var(--text-color-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
