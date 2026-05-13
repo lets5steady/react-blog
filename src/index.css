@@ -20,10 +20,10 @@
     --font-size-xs: 0.75rem;
     /* 13px */
     --font-size-ss: 0.8125rem;
-    /* 15px */
-    --font-size-sm: 0.9375rem;
     /* 14px */
-    --font-size-md: 0.875rem;
+    --font-size-sm: 0.875rem;
+    /* 15px */
+    --font-size-md: 0.9375rem;
     /* 20px */
     --font-size-lg: 1.25rem;
     /* 24px */
@@ -35,6 +35,7 @@
 
     /* Spacing */
     --space-xs: 0.5rem;
+    --space-ss: 0.625rem;
     --space-sm: 0.75rem;
     --space-md: 1rem;
     --space-lg: 2rem;
@@ -42,9 +43,18 @@
     /* radius */
     --rounded-sm: 2px;
     --rounded-md: 16px;
+
+    /* Max-width */
+    --max-width-sp: 375px;
 }
 
 body{
     font-family: "Lexend", sans-serif;
     font-weight: var(--font-weight-nomal);
+    color: var(--main-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }

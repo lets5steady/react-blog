@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    max-width: var(--max-width-sp);
+    aspect-ratio: 9/16;
+    background-image: url(../../../assets/FirstView.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    padding: var(--space-ss);
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
