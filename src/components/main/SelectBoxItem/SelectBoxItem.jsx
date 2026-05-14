@@ -1,9 +1,7 @@
-import styles from './SelectBoxItem.module.css'
-
-export default function SelectBoxItem({ text = '選択項目' }) {
+export default function SelectBoxItem({items}) {
     return (
-        <div className={styles.container}>
-            <p className={styles.item}>{text}</p>
-        </div>
+        <>
+        {items.map(item => <option key={item.id} value={item.value}>{item.name}</option>)}
+        </>
     );
 }
