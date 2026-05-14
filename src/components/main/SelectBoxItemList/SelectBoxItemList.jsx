@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './SelectBoxItemList.module.css'
 
-export default function SelectBoxItemList({children}) {
+export default function SelectBoxItemList({ categoryName , children}) {
 
     const [form,setForm] = useState({})
 
@@ -18,7 +18,7 @@ export default function SelectBoxItemList({children}) {
 
     return(
         <>
-        <select name="medium" id="medium" 
+        <select name={categoryName} id={categoryName} 
             className={styles.box}
             onChange={handleForm}>
             <option value="">--１つ選択してください--</option>
