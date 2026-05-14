@@ -11,6 +11,7 @@ import SelectBoxItem from "./components/main/SelectBoxItem/SelectBoxItem"
 import SelectBoxItemList from "./components/main/SelectBoxItemList/SelectBoxItemList"
 import TextArea from "./components/main/TextArea/TextArea"
 import GridLayout from "./components/main/GridLayout/GridLayout"
+import CheckBox from "./components/main/CheckBox/CheckBox"
 
 function App() {
   const medium = [
@@ -32,6 +33,13 @@ function App() {
     { text: '50 and above', value: '50 and above', id: 6 },
   ]
 
+  const favoriteField = [
+    { text: '音楽', value: 'music', id: 1 },
+    { text: '芸術', value: 'art', id: 2 },
+    { text: 'デザイン', value: 'design', id: 3 },
+    { text: 'プログラミング', value: 'programming', id: 4 },
+  ]
+
   return (
     <>
       <HeaderArea />
@@ -48,6 +56,9 @@ function App() {
       </SelectBoxItemList>
       <GridLayout>
         <RadioButton categoryName='age' options={ages}/>
+      </GridLayout>
+      <GridLayout>
+        <CheckBox options={favoriteField}/>
       </GridLayout>
     </>
   )
