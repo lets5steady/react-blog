@@ -32,6 +32,8 @@
     --font-weight-bold: 700;
 
     /* Spacing */
+    /* 4px */
+    --space-xxs: 0.25rem;
     --space-xs: 0.5rem;
     /* 10px */
     --space-ss: 0.625rem;

@@ -12,6 +12,8 @@ import SelectBoxItemList from "./components/main/SelectBoxItemList/SelectBoxItem
 import TextArea from "./components/main/TextArea/TextArea"
 import GridLayout from "./components/main/GridLayout/GridLayout"
 import CheckBox from "./components/main/CheckBox/CheckBox"
+import ThumbsUpButton from "./components/main/ThumbsUpButton/ThumbsUpButton"
+import ThumbsDownButton from "./components/main/ThumbsDownButton/ThumbsDownButton"
 
 function App() {
   const medium = [
@@ -60,6 +62,8 @@ function App() {
       <GridLayout>
         <CheckBox options={favoriteField}/>
       </GridLayout>
+      <ThumbsUpButton initialValue={210}/>
+      <ThumbsDownButton initialValue={9}/>
     </>
   )
 }

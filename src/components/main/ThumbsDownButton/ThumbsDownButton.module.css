@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    gap: var(--space-xxs);
+    align-items: center;
+}
+
+.btn{
+    width: 16px;
+}
+
+.number{
+    font-size: var(--font-size-xs);
+}
