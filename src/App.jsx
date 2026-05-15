@@ -14,6 +14,8 @@ import GridLayout from "./components/main/GridLayout/GridLayout"
 import CheckBox from "./components/main/CheckBox/CheckBox"
 import ThumbsUpButton from "./components/main/ThumbsUpButton/ThumbsUpButton"
 import ThumbsDownButton from "./components/main/ThumbsDownButton/ThumbsDownButton"
+import bamosList from "../bamosList"
+import CardImage from "./components/main/CardImage/CardImage"
 
 function App() {
   const medium = [
@@ -64,6 +66,9 @@ function App() {
       </GridLayout>
       <ThumbsUpButton initialValue={210}/>
       <ThumbsDownButton initialValue={9}/>
+      <CardImage>
+        {bamosList}
+      </CardImage>
     </>
   )
 }
