@@ -44,15 +44,17 @@
     /* radius */
     --rounded-sm: 2px;
     --rounded-md: 16px;
-
-    /* Max-width */
-    --max-width-sp: 375px;
 }
 
 body{
     font-family: "Lexend", sans-serif;
     font-weight: var(--font-weight-nomal);
     color: var(--main-color);
+}
+
+.container {
+    width: min(calc(100% - 32px), 994px);
+    margin-inline: auto;
 }
 
 img{
