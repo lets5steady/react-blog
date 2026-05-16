@@ -1,0 +1,19 @@
+.container{
+    width: 48px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxs);
+    align-items: center;
+    font-size: var(--font-size-xs);
+}
+
+.btn{
+    width: 20px;
+    transition: transform .3s ease-in-out;
+}
+
+.close{
+    composes: btn;
+    transform: rotate(135deg);
+}

@@ -16,6 +16,7 @@ import ThumbsUpButton from "./components/main/ThumbsUpButton/ThumbsUpButton"
 import ThumbsDownButton from "./components/main/ThumbsDownButton/ThumbsDownButton"
 import bamosList from "../bamosList"
 import CardImage from "./components/main/CardImage/CardImage"
+import PlusButton from "./components/header/PlusButton/PlusButton"
 
 function App() {
   const medium = [
@@ -44,6 +45,11 @@ function App() {
     { text: 'プログラミング', value: 'programming', id: 4 },
   ]
 
+  const drawerBtnText = {
+    nomal: 'MENU',
+    active: 'CLOSE'
+  };
+
   return (
     <>
       <HeaderArea />
@@ -69,6 +75,7 @@ function App() {
       <CardImage>
         {bamosList}
       </CardImage>
+      <PlusButton text={drawerBtnText}/>
     </>
   )
 }
