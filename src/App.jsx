@@ -17,6 +17,7 @@ import ThumbsDownButton from "./components/main/ThumbsDownButton/ThumbsDownButto
 import bamosList from "../bamosList"
 import CardImage from "./components/main/CardImage/CardImage"
 import PlusButton from "./components/header/PlusButton/PlusButton"
+import MenuItem from "./components/header/MenuItem/MenuItem"
 
 function App() {
   const medium = [
@@ -50,6 +51,13 @@ function App() {
     active: 'CLOSE'
   };
 
+  const menuItems = [
+    {text: 'MENU-01' , id: 1},
+    {text: 'MENU-02' , id: 2},
+    {text: 'MENU-03' , id: 3},
+    {text: 'MENU-04' , id: 4},
+  ];
+
   return (
     <>
       <HeaderArea />
@@ -76,6 +84,7 @@ function App() {
         {bamosList}
       </CardImage>
       <PlusButton text={drawerBtnText}/>
+      <MenuItem items={menuItems}/>
     </>
   )
 }
