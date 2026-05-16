@@ -7,6 +7,7 @@
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-md);
     border-radius: var(--rounded-md);
+    transition: all .2s linear;
 }
 
 .btn:hover{

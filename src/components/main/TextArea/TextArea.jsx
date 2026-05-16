@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './TextArea.module.css'
-import Logo from '../../commons/Logo';
 
 export default function TextArea({placeholder = 'ここに記入してください。'}) {
     const [form,setForm] = useState({
