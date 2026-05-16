@@ -7,10 +7,11 @@
     color: var(--text-color-secondary);
 }
 
-.container li{
+.container li a{
+    padding-inline: var(--space-md);
     transition: all .3s ease-in-out;
 }
 
-.container li:hover{
+.container li a:hover{
     color: var(--accent-color);
 }

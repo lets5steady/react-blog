@@ -1,4 +1,4 @@
-import Logo from "./components/commons/Logo"
+import Logo from "./components/commons/Logo/Logo"
 import SectionHeader from "./components/commons/SectionHeader/SectionHeader"
 import SimpleButton from "./components/commons/SimpleButton/SimpleButton"
 import FooterArea from "./components/footer/FooterArea/FooterArea"
@@ -18,6 +18,7 @@ import bamosList from "../bamosList"
 import CardImage from "./components/main/CardImage/CardImage"
 import PlusButton from "./components/header/PlusButton/PlusButton"
 import MenuItem from "./components/header/MenuItem/MenuItem"
+import HeaderNav from "./components/header/HeaderNav/HeaderNav"
 
 function App() {
   const medium = [
@@ -46,18 +47,6 @@ function App() {
     { text: 'プログラミング', value: 'programming', id: 4 },
   ]
 
-  const drawerBtnText = {
-    nomal: 'MENU',
-    active: 'CLOSE'
-  };
-
-  const menuItems = [
-    {text: 'MENU-01' , id: 1},
-    {text: 'MENU-02' , id: 2},
-    {text: 'MENU-03' , id: 3},
-    {text: 'MENU-04' , id: 4},
-  ];
-
   return (
     <>
       <HeaderArea />
@@ -65,7 +54,7 @@ function App() {
       <FooterArea />
       <SectionHeader title='We Value Your Feedback' />
       <SimpleButton text='送信' />
-      <Logo color='accent' />
+      <Logo color='black' Tag="h1" alt = 'BAMOS DESIGN'/>
       <FirstView />
       <TextArea />
       <CardHeader title='[Music] Indie Beats' name='Liam Johnson' />
@@ -83,8 +72,6 @@ function App() {
       <CardImage>
         {bamosList}
       </CardImage>
-      <PlusButton text={drawerBtnText}/>
-      <MenuItem items={menuItems}/>
     </>
   )
 }

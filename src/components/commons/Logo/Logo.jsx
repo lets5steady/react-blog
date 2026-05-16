@@ -1,6 +1,7 @@
-import logoBlack from '../../assets/bamosDesignLogo_black.svg'
-import logoWhite from '../../assets/bamosDesignLogo_white.svg'
-import logoAccent from '../../assets/bamosDesignLogo_accent.svg'
+import logoBlack from '../../../assets/bamosDesignLogo_black.svg'
+import logoWhite from '../../../assets/bamosDesignLogo_white.svg'
+import logoAccent from '../../../assets/bamosDesignLogo_accent.svg'
+import styles from './Logo.module.css'
 
 // src属性のみを切り替え
 const logoMap = {
@@ -15,5 +16,5 @@ export default function Logo({ color = 'black' ,Tag = 'div' , alt = 'ロゴ' }) 
             // logoMap内に存在しないcolorが渡された場合はlogoBlackを描画
             const logoSrc = logoMap[color] ?? logoBlack;
 
-            return <Tag><img src={logoSrc} alt={alt} /></Tag>
+            return <Tag className={styles.container}><img src={logoSrc} alt={alt} /></Tag>
 };
