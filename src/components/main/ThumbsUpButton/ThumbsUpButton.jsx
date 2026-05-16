@@ -9,9 +9,11 @@ export default function ThumbsUpButton({initialValue}) {
     const [count,setCount] = useState(initialValue);
 
     const handleClick = () => {
-        setClicked(!clicked);
-        {!clicked && setCount(prev => prev + 1)};
-        {clicked && setCount(prev => prev - 1)};
+        const nextClicked = !clicked;
+        setClicked(nextClicked);
+
+        setCount(prev => nextClicked ? prev + 1 : prev - 1)
+        // setCount(prev => prev + (nextClicked ? 1 : -1))
     }
     
     return(
