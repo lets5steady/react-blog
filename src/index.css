@@ -11,7 +11,6 @@
     --text-color-secondary: #333333;
     --thumbs-up-color: #FE287A;
     --thumbs-down-color: #01A1EB;
-    --radio-button-color: #1A73E8;
 
     /* Font-size */
     /* 12px */
@@ -36,13 +35,22 @@
     /* Spacing */
     /* 4px */
     --space-xxs: 0.25rem;
+    /* 8px */
     --space-xs: 0.5rem;
     /* 10px */
     --space-ss: 0.625rem;
+    /* 12px */
     --space-sm: 0.75rem;
+    /* 16px */
     --space-md: 1rem;
+    /* 32px */
     --space-lg: 2rem;
+    /* 40px */
+    --space-ll: 2.5rem;
+    /* 48px */
     --space-xl: 3rem;
+    /* 120px */
+    --space-xxl: 7.5rem;
 
     /* radius */
     --rounded-sm: 2px;
@@ -69,6 +77,10 @@ img{
     color: var(--text-color-secondary);
     font-size: var(--font-size-sm);
     font-weight: 500;
+}
+
+ul li{
+    list-style: none;
 }
 
 li a{

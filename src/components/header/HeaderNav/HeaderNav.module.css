@@ -1,0 +1,6 @@
+.header__nav{
+    padding-block: var(--space-xs);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
