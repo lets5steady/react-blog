@@ -1,6 +1,5 @@
 .container{
-    width: min(calc(100% - 32px), 994px);
-    /* コンポーネント呼び出す親元でコンテンツ幅制御するなら不要になる？ */
+    width: 100%;
     aspect-ratio: 9/16;
     background-image: url(../../../assets/FirstView.jpg);
     background-position: center;

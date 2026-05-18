@@ -1,5 +1,18 @@
+.header__nav{
+    padding-block: var(--space-md);
+    position: relative;
+    z-index: 10;
+}
+
+.active{
+    composes: header__nav;
+    background-color: var(--accent-color);
+}
+
 .header__logo{
-    padding: var(--space-md);
+    width: min(calc(100% - 32px), 994px);
+    padding-inline: var(--space-md);
+    margin-inline: auto; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,8 +24,6 @@
     width: 100%;
     padding-block: var(--space-xxl);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: var(--space-ll);
     background-color: #fffc;
