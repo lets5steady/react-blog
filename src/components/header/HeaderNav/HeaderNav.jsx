@@ -29,8 +29,8 @@ export default function HeaderNav() {
         <>
         <div className={isOpen ? styles.active : styles.header__nav}>
             <div className={styles.header__logo}>
-            <Logo color={isOpen ? 'white' : 'black'} Tag="h1" alt = 'BAMOS DESIGN'/>
-            <PlusButton text={drawerBtnText} isOpen={isOpen} onToggle={handleClick}/>
+                <Logo color={isOpen ? 'white' : 'black'} Tag="h1" alt = 'BAMOS DESIGN'/>
+                <PlusButton text={drawerBtnText} isOpen={isOpen} onToggle={handleClick}/>
             </div>
         </div>
         <nav className={isOpen ? styles.open : styles.modal}>
