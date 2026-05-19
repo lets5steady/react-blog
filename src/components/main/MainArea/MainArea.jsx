@@ -1,9 +1,11 @@
-import styles from './MainArea.module.css'
+import CardItem from '../CardItem/CardItem';
+import styles from './MainArea.module.css';
+import bamosList from '../../../../bamosList';
 
 export default function MainArea() {
     return(
         <main>
-            <h1>メイン</h1>
+            <CardItem itemData={bamosList}/>
         </main>
     );
 }

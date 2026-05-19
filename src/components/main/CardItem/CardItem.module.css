@@ -1,0 +1,15 @@
+.card__item{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adjust{
+    align-self: flex-start;
+}

@@ -1,13 +1,10 @@
 import styles from './CardImage.module.css';
 
-export default function CardLayout({children}) {
+export default function CardImage({src}) {
     return(
-        <div className={styles.container}>
-            {children.map(item => 
-                <div key={crypto.randomUUID()}>
-                    <img src={item.image} alt="記事のサムネイル" />
-                </div>
-            )}
+        <div className={styles.img__box}>
+            <img src={src} alt="記事のサムネイル"
+            className={styles.img}/>
         </div>
     );
 }

@@ -3,7 +3,6 @@ import SectionHeader from "./components/commons/SectionHeader/SectionHeader"
 import SimpleButton from "./components/commons/SimpleButton/SimpleButton"
 import FooterArea from "./components/footer/FooterArea/FooterArea"
 import HeaderArea from "./components/header/HeaderArea/HeaderArea"
-import CardHeader from "./components/main/CardHeader/CardHeader"
 import MainArea from "./components/main/MainArea/MainArea"
 import RadioButton from "./components/main/RadioButton/RadioButton"
 import SelectBoxItem from "./components/main/SelectBoxItem/SelectBoxItem"
@@ -11,10 +10,6 @@ import SelectBoxItemList from "./components/main/SelectBoxItemList/SelectBoxItem
 import TextArea from "./components/main/TextArea/TextArea"
 import GridLayout from "./components/main/GridLayout/GridLayout"
 import CheckBox from "./components/main/CheckBox/CheckBox"
-import ThumbsUpButton from "./components/main/ThumbsUpButton/ThumbsUpButton"
-import ThumbsDownButton from "./components/main/ThumbsDownButton/ThumbsDownButton"
-import bamosList from "../bamosList"
-import CardImage from "./components/main/CardImage/CardImage"
 
 function App() {
   const medium = [
@@ -51,7 +46,6 @@ function App() {
       <SectionHeader title='We Value Your Feedback' />
       <SimpleButton text='送信' />
       <TextArea />
-      <CardHeader title='[Music] Indie Beats' name='Liam Johnson' />
       <SelectBoxItemList categoryName='medium'>
         <SelectBoxItem items={medium} />
       </SelectBoxItemList>
@@ -61,11 +55,6 @@ function App() {
       <GridLayout>
         <CheckBox options={favoriteField}/>
       </GridLayout>
-      <ThumbsUpButton initialValue={210}/>
-      <ThumbsDownButton initialValue={9}/>
-      <CardImage>
-        {bamosList}
-      </CardImage>
     </>
   )
 }
