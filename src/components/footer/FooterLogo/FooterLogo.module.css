@@ -1,0 +1,8 @@
+.container{
+    max-width: 994px;
+    margin-inline: auto;
+    padding-block: 1.125rem;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
