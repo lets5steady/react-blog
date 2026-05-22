@@ -1,7 +1,23 @@
 .sectionTitle{
-    width: fit-content;
+    max-width: 994px;
+    margin-block-end: 1.5rem;
+    margin-inline: auto;
+    text-align: center;
+    text-align: center;
     padding-block: var(--space-sm);
     border-block: 1px solid #000;
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-xl);
+}
+
+@media (min-width:500px) {
+    .sectionTitle{
+        margin-block-end: 2.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    .sectionTitle{
+        margin-block-end: 2.8125rem;
+    }
 }

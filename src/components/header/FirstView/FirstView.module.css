@@ -1,5 +1,7 @@
 .container{
     width: 100%;
+    max-width: 994px;
+    margin-block-end: 60px;
     aspect-ratio: 9/16;
     background-image: url(../../../assets/FirstView.jpg);
     background-position: center;
@@ -16,4 +18,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width:500px) {
+    .container{
+        margin-inline: auto;
+        aspect-ratio: 2/1;
+    }
 }

@@ -1,0 +1,9 @@
+.list{
+    margin-block-end: 53px;
+}
+
+@media (min-width: 500px) {
+    .list{
+        margin-block-end: 60px;
+        }
+}

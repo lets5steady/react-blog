@@ -1,6 +1,5 @@
 .container{
     max-width: 994px;
-    padding-inline: var(--space-md);
     margin-inline: auto;
     display: grid;
     grid-template-columns: 1fr;
