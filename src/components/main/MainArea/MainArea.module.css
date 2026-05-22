@@ -2,6 +2,22 @@
     margin-block-end: 53px;
 }
 
+.text{
+    max-width: 994px;
+    margin-inline: auto;
+    margin-block-end: 27px;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.btn_container{
+    margin-block-end: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 500px) {
     .list{
         margin-block-end: 60px;
