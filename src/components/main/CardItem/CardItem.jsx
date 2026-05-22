@@ -1,12 +1,12 @@
 import ThumbsButtons from '../ThumbsButtons/ThumbsButtons';
 import CardImage from '../CardImage/CardImage';
 import CardHeader from "../CardHeader/CardHeader";
-import GridLayout from '../../main/GridLayout/GridLayout';
 import styles from './CardItem.module.css';
+import CardLayout from '../CardLayout/CardLayout';
 
 export default function CardItem({itemData}) {
     return(
-        <GridLayout>
+        <CardLayout>
             {itemData.map(item => (
                 <div key={crypto.randomUUID()} className={styles.card__item}>
                     <CardImage src={item.image}/>
@@ -16,6 +16,6 @@ export default function CardItem({itemData}) {
                     </div>
                 </div>
             ))}
-        </GridLayout>
+        </CardLayout>
     );
 }

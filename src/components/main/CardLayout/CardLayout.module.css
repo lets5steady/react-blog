@@ -1,0 +1,20 @@
+.container{
+    max-width: 994px;
+    padding-inline: var(--space-md);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+}
+
+@media (min-width:500px) {
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

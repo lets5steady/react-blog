@@ -6,7 +6,7 @@
     color: var(--base-color);
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-md);
-    border-radius: var(--rounded-md);
+    border-radius: var(--rounded-lg);
     transition: all .2s linear;
 }
 

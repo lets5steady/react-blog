@@ -52,9 +52,10 @@
     /* 120px */
     --space-xxl: 7.5rem;
 
-    /* radius */
+    /* Radius */
     --rounded-sm: 2px;
-    --rounded-md: 16px;
+    --rounded-md: 4px;
+    --rounded-lg: 16px;
 }
 
 body{
