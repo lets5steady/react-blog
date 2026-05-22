@@ -5,6 +5,14 @@
     gap: var(--space-xs);
 }
 
+.card__item:first-child img{
+    object-position: right;
+}
+
+.card__item:nth-child(2) img{
+    object-position: 63%;
+}
+
 .desc{
     display: flex;
     justify-content: space-between;
