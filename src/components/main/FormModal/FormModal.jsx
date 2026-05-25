@@ -5,7 +5,8 @@ import close from '../../../assets/close.png';
 export default function FormModal({ title, desc ,onClick}) {
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container}
+        onClick={(e) => e.stopPropagation()}>
             <button onClick={onClick}
             type='button'
             aria-label='閉じる'

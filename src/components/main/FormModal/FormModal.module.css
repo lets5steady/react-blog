@@ -6,6 +6,7 @@
     gap: var(--space-md);
     background-color: var(--base-color);
     border-radius: var(--rounded-md);
+    cursor: default;
 }
 
 .container h2{

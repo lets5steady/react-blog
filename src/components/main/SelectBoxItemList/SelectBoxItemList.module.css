@@ -5,4 +5,5 @@
     border: 1px solid var(--text-color-secondary);
     border-radius: var(--rounded-sm);
     font-size: var(--font-size-ss);
+    cursor: pointer;
 }
