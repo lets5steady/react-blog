@@ -17,7 +17,7 @@ export default function TextArea({placeholder = 'ここに記入してくださ�
     return(
             <textarea 
             name="message" id="message" 
-            rows="6" cols="22"
+            rows="2" cols="22"
             placeholder={placeholder}
             className={styles.textArea}
             value={form.message}

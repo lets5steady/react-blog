@@ -1,5 +1,6 @@
 .btn{
     width: 146px;
+    margin-inline: auto;
     padding-block: var(--space-xs);
     padding-inline: var(--space-md);
     background-color: var(--main-color);

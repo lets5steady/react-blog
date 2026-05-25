@@ -1,4 +1,5 @@
 .box{
+    width: fit-content;
     padding-inline: var(--space-xs);
     padding-block: var(--space-ss);
     border: 1px solid var(--text-color-secondary);
