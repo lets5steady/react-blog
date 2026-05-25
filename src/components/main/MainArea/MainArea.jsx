@@ -3,6 +3,7 @@ import styles from './MainArea.module.css';
 import bamosList from '../../../../bamosList';
 import SectionHeader from '../../commons/SectionHeader/SectionHeader';
 import SimpleButton from '../../commons/SimpleButton/SimpleButton';
+import FormModal from '../FormModal/FormModal';
 
 export default function MainArea() {
     return(
@@ -17,8 +18,9 @@ export default function MainArea() {
                 <p> Please take a moment to share your thoughts — your input helps us make BAMOS DESIGN even better.</p>
             </div>
             <div className={styles.btn_container}>
-                <SimpleButton text='送信'/>
+                <SimpleButton text='Feedback'/>
             </div>
+            <FormModal title='FEEDBACK' desc='Thank you for visiting BAMOS DESIGN.Please take a moment to complete our survey to help us improve our services.'/>
         </main>
     );
 }
