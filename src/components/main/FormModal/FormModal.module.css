@@ -1,11 +1,18 @@
 .container{
-    max-width: 994px;
+    width: 50%;
     padding: var(--space-md);
     display: flex;
     flex-direction: column;
-    gap: var(--space-lg);
+    gap: var(--space-md);
+    background-color: var(--base-color);
+    border-radius: var(--rounded-md);
 }
 
 .container h2{
     align-self: center;
+}
+
+.close{
+    width: 20px;
+    align-self: flex-end;
 }

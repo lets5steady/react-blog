@@ -11,7 +11,7 @@ const questions = [
     'Age',
     'How did you hear about BAMOS DESIGN?',
     'What is your favorite field or area of interest?',
-    'What kind of special features or topics would you like to read on BAMOS DESIGN in the future?',
+    // 'What kind of special features or topics would you like to read on BAMOS DESIGN in the future?',
 ];
 
 const medium = [
@@ -66,7 +66,7 @@ export default function Form() {
             </div>
 
             <div className={styles.input}>
-                <p>{questions[3]}</p>
+                {/* <p>{questions[3]}</p> */}
                 <TextArea/>
             </div>
 
