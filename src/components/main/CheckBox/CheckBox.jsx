@@ -1,16 +1,14 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import styles from './CheckBox.module.css';
 
+export default function CheckBox({ options = [], form, setForm }) {
 
-export default function CheckBox({ categoryName, options=[]}) {
-    const [form,setForm] = useState({});
+    const handleCheck = e => {
+        const checkedItem = [...form.favoriteField];
 
-    const handleForm = e => {
-        const checkedItem = [];
-        
         if (e.target.checked) {
             checkedItem.push(e.target.value);
-        }else{
+        } else {
             checkedItem.splice(checkedItem.indexOf(e.target.value), 1);
         }
 
@@ -18,21 +16,20 @@ export default function CheckBox({ categoryName, options=[]}) {
             ...form,
             [e.target.name]: checkedItem
         });
-        console.log(checkedItem);
-        
     }
 
-    return(
-            <>
-            {options.map(option => 
+
+    return (
+        <>
+            {options.map(option =>
                 <label key={option.id}>
-                    <input type="checkbox" name={categoryName} id={option.id}
+                    <input type="checkbox" name='favoriteField' id={option.id}
                         value={option.value}
-                        onChange={handleForm}>
+                        onChange={handleCheck}>
                     </input>
                     {option.text}
                 </label>)}
-            </>
+        </>
     );
 }
 

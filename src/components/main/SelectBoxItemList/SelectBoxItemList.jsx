@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import styles from './SelectBoxItemList.module.css'
 
-export default function SelectBoxItemList({ categoryName , children}) {
-
-    const [form,setForm] = useState({})
+export default function SelectBoxItemList({ children, form, setForm }) {
 
     const handleForm = e => {
         setForm({
@@ -12,18 +9,15 @@ export default function SelectBoxItemList({ categoryName , children}) {
         })
     };
 
-    // const show = () => {
-    //     console.log(`知ったきっかけ${form.medium}`)
-    // }一つのボタンで複数の値をまとめて送信できるようにする
-
-    return(
+    return (
         <>
-        <select name={categoryName} id={categoryName} 
-            className={styles.box}
-            onChange={handleForm}>
-            <option value="">--１つ選択してください--</option>
-            {children}
-        </select>
+            <select name='medium' id='medium'
+                value={form.medium}
+                className={styles.box}
+                onChange={handleForm}>
+                <option value="">--１つ選択してください--</option>
+                {children}
+            </select>
         </>
     );
 }

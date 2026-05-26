@@ -1,26 +1,22 @@
-import { useState } from 'react';
 import styles from './TextArea.module.css'
 
-export default function TextArea({placeholder = 'ここに記入してください。'}) {
-    const [form,setForm] = useState({
-        message: ''
-    });
+export default function TextArea({ placeholder = 'ここに記入してください。', form, setForm }) {
 
     const handleForm = e => {
         setForm({
             ...form,
             [e.target.name]: e.target.value
         });
-        console.log(form);  
     };
 
-    return(
-            <textarea 
-            name="message" id="message" 
+    return (
+        <textarea
+            name="message" id="message"
             rows="2" cols="22"
             placeholder={placeholder}
             className={styles.textArea}
             value={form.message}
-            onChange={handleForm}></textarea>
+            onChange={handleForm}>
+        </textarea>
     );
 }
