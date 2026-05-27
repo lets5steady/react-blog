@@ -14,3 +14,9 @@
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
 }
+
+@media (max-width: 375px) {
+    .formContainer{
+        gap: var(--space-md);
+    }
+}
