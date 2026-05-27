@@ -26,16 +26,16 @@ export default function HeaderNav() {
     });
 
     return(
-        <>
-        <div className={isOpen ? styles.active : styles.header__nav}>
-            <div className={styles.header__logo}>
-                <h1><Logo color={isOpen ? 'white' : 'black'}  alt = 'BAMOS DESIGN'/></h1>
-                <PlusButton text={drawerBtnText} isOpen={isOpen} onToggle={handleClick}/>
+        <div className={styles.header_container}>
+            <div className={isOpen ? styles.active : styles.header__nav}>
+                <div className={styles.header__logo}>
+                    <h1 className={styles.logo_container}><Logo color={isOpen ? 'white' : 'black'}  alt = 'BAMOS DESIGN'/></h1>
+                    <PlusButton text={drawerBtnText} isOpen={isOpen} onToggle={handleClick}/>
+                </div>
             </div>
+            <nav className={`${isOpen ? styles.open : styles.modal} ${styles.pc_only}`}>
+                <MenuItem items={menuItems}/>
+            </nav>
         </div>
-        <nav className={isOpen ? styles.open : styles.modal}>
-            <MenuItem items={menuItems}/>
-        </nav>
-        </>
     );
 }
