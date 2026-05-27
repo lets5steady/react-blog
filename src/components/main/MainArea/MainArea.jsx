@@ -6,6 +6,7 @@ import SimpleButton from '../../commons/SimpleButton/SimpleButton';
 import FormModal from '../FormModal/FormModal';
 import { useState } from 'react';
 import ModalOverlay from '../ModalOverlay/ModalOverlay';
+import FirstView from '../FirstView/FirstView';
 
 export default function MainArea() {
     const [isOpen,setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function MainArea() {
 
     return(
         <main>
+            <FirstView />
             <SectionHeader title='Latest Blog Posts'/>
             <div className={styles.list}>
                 <CardItem itemData={bamosList}/>
