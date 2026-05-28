@@ -1,3 +1,12 @@
+.header_container{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--base-color);
+}
+
 .header__nav{
     padding-block: var(--space-md);
     position: relative;
@@ -33,7 +42,8 @@
     gap: var(--space-ll);
     background-color: #fffc;
     position: fixed;
-    top: -100%;
+    /* 親要素がposition: fixed;になり基準が変わったことで-100％では画面外に消えないため調整 */
+    top: -700%;
     transition: all .3s ease-in-out; 
 }
 
@@ -42,7 +52,7 @@
     top: 0%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .header_container{
         max-width: 994px;
         margin-inline: auto;
@@ -57,5 +67,8 @@
         background-color: inherit;
         position: static;
         transition: none;
+    }
+    .pc_only ul{
+        gap: var(--space-md);
     }
 }

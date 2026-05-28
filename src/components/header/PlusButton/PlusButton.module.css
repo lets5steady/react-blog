@@ -24,7 +24,7 @@
     color: var(--base-color);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .container{
         display: none;
     }

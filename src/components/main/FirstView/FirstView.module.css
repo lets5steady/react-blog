@@ -1,6 +1,8 @@
 .container{
     width: 100%;
     max-width: 994px;
+    /* ページ上部に固定しているheader_navの高さ71px */
+    margin-block-start: 71px;
     margin-block-end: 60px;
     aspect-ratio: 9/16;
     background-image: url(../../../assets/FirstView.jpg);
