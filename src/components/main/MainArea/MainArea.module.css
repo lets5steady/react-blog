@@ -1,5 +1,6 @@
 .list{
     margin-block-end: 53px;
+    padding-inline: var(--space-md);
 }
 
 .text{

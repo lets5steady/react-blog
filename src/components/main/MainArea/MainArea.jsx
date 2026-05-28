@@ -9,31 +9,30 @@ import ModalOverlay from '../ModalOverlay/ModalOverlay';
 import FirstView from '../FirstView/FirstView';
 
 export default function MainArea() {
-    const [isOpen,setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const modalBtn = (e) => {
         setIsOpen(prev => !prev);
     };
 
-    return(
+    return (
         <main>
             <FirstView />
-            <SectionHeader title='Latest Blog Posts'/>
+            <SectionHeader title='Latest Blog Posts' />
             <div className={styles.list}>
-                <CardItem itemData={bamosList}/>
+                <CardItem itemData={bamosList} />
             </div>
-            <SectionHeader title='We Value Your Feedback'/>
+            <SectionHeader title='We Value Your Feedback' />
             <div className={styles.text}>
                 <p>We’re gathering feedback from our customers at BAMOS DESIGN.</p>
                 <p> Please take a moment to share your thoughts — your input helps us make BAMOS DESIGN even better.</p>
             </div>
             <div className={styles.btn_container}>
-                <SimpleButton text='Feedback' onClick={modalBtn}/>
+                <SimpleButton text='Feedback' onClick={modalBtn} />
             </div>
             <ModalOverlay state={isOpen}
-            onClick={modalBtn}>
+                onClick={modalBtn}>
                 <FormModal title='FEEDBACK'
-                desc='Thank you for visiting BAMOS DESIGN.Please take a moment to complete our survey to help us improve our services.'
-                onClick={modalBtn}/>
+                    onClick={modalBtn} />
             </ModalOverlay>
         </main>
     );

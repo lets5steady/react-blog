@@ -1,6 +1,5 @@
 .card__item{
     width: fit-content;
-    padding-inline: var(--space-md);
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);

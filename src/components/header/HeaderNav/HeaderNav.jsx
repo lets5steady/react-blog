@@ -18,23 +18,23 @@ const menuItems = [
 
 
 export default function HeaderNav() {
-    const [isOpen,setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleClick = (e => {
         const clicked = !isOpen;
         setIsOpen(clicked);
     });
 
-    return(
+    return (
         <div className={styles.header_container}>
             <div className={isOpen ? styles.active : styles.header__nav}>
                 <div className={styles.header__logo}>
-                    <h1 className={styles.logo_container}><Logo color={isOpen ? 'white' : 'black'}  alt = 'BAMOS DESIGN'/></h1>
-                    <PlusButton text={drawerBtnText} isOpen={isOpen} onToggle={handleClick}/>
+                    <h1 className={styles.logo_container}><Logo color={isOpen ? 'white' : 'black'} alt='BAMOS DESIGN' /></h1>
+                    <PlusButton text={drawerBtnText} isOpen={isOpen} onToggle={handleClick} />
                 </div>
             </div>
             <nav className={`${isOpen ? styles.open : styles.modal} ${styles.pc_only}`}>
-                <MenuItem items={menuItems}/>
+                <MenuItem items={menuItems} />
             </nav>
         </div>
     );

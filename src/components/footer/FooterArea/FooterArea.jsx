@@ -1,4 +1,3 @@
-import Logo from '../../commons/Logo/Logo';
 import FooterLogo from '../FooterLogo/FooterLogo';
 import styles from './FooterArea.module.css'
 

@@ -28,7 +28,8 @@ export default function CheckBox({ options = [], form, setForm }) {
                         onChange={handleCheck}>
                     </input>
                     {option.text}
-                </label>)}
+                </label>)
+            }
         </>
     );
 }
