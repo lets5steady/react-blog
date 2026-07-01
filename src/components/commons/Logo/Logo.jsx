@@ -1,7 +1,6 @@
 import logoBlack from '../../../assets/bamosDesignLogo_black.svg'
 import logoWhite from '../../../assets/bamosDesignLogo_white.svg'
 import logoAccent from '../../../assets/bamosDesignLogo_accent.svg'
-import styles from './Logo.module.css'
 
 // src属性のみを切り替え
 const logoMap = {

@@ -10,7 +10,7 @@ import FirstView from '../FirstView/FirstView';
 
 export default function MainArea() {
     const [isOpen, setIsOpen] = useState(false);
-    const modalBtn = (e) => {
+    const modalBtn = () => {
         setIsOpen(prev => !prev);
     };
 
@@ -32,7 +32,8 @@ export default function MainArea() {
             <ModalOverlay state={isOpen}
                 onClick={modalBtn}>
                 <FormModal title='FEEDBACK'
-                    onClick={modalBtn} />
+                    onClick={modalBtn}
+                    setIsOpen={setIsOpen}/>
             </ModalOverlay>
         </main>
     );

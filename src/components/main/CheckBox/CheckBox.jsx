@@ -1,6 +1,3 @@
-import { useRef, useState } from 'react';
-import styles from './CheckBox.module.css';
-
 export default function CheckBox({ options = [], form, setForm }) {
 
     const handleCheck = e => {
@@ -25,7 +22,8 @@ export default function CheckBox({ options = [], form, setForm }) {
                 <label key={option.id}>
                     <input type="checkbox" name='favoriteField' id={option.id}
                         value={option.value}
-                        onChange={handleCheck}>
+                        onChange={handleCheck}
+                        checked={form.favoriteField.includes(option.value)}>
                     </input>
                     {option.text}
                 </label>)

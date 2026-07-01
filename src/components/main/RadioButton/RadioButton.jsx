@@ -1,5 +1,3 @@
-import styles from './RadioButton.module.css'
-
 export default function RadioButton({ options = [], form, setForm }) {
 
     const handleForm = e => {
@@ -12,10 +10,10 @@ export default function RadioButton({ options = [], form, setForm }) {
     return (
         options.map(option =>
             <label key={option.id}>
-                <input type="radio" name='ages' id={option.id}
+                <input type="radio" name='age' id={option.id}
                     value={option.value}
                     onChange={handleForm}
-                    checked={form.ages === option.value}>
+                    checked={form.age === option.value}>
                 </input>
                 {option.text}
             </label>)

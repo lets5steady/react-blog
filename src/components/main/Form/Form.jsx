@@ -41,21 +41,46 @@ const favoriteField = [
     { text: 'プログラミング', value: 'programming', id: 4 },
 ];
 
-export default function Form() {
+export default function Form({setIsOpen}) {
     const [form,setForm] = useState({
-        Age: null,
-        medium: undefined,
+        age: null,
+        medium: '',
         favoriteField: [],
         message: ''
     });
 
     const submitBtn = () => {
+        const errors = [];
+        if (form.age === null) {
+            errors.push('年齢');
+        }
+
+        if (form.medium === '') {
+            errors.push('このサイトを知ったきっかけ');
+        }
+
+        if (form.favoriteField.length === 0) {
+            errors.push('興味のあるジャンル');
+        }
+
+        if (errors.length > 0) {
+            alert(`${errors.join('、')}を選択してください。`);
+            return;
+        }
         console.log(`
-            年齢：${form.ages}
+            年齢：${form.age}
             どうやってこのサイトを知ったのか：${form.medium}
             興味のあるジャンル：${form.favoriteField}
             ご意見：${form.message}
             `);
+        alert('フィードバックが送信されました。');
+        setIsOpen(false);
+        setForm({
+        age: null,
+        medium: '',
+        favoriteField: [],
+        message: ''
+        });
     };
 
     return (

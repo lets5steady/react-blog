@@ -2,7 +2,7 @@ import Form from '../Form/Form';
 import styles from './FormModal.module.css';
 import close from '../../../assets/close.png';
 
-export default function FormModal({ title, onClick }) {
+export default function FormModal({ title, onClick ,setIsOpen }) {
 
     return (
         <div className={styles.container}
@@ -13,7 +13,7 @@ export default function FormModal({ title, onClick }) {
                 className={styles.close}>
                 <img src={close} alt="" /></button>
             <h2>{title}</h2>
-            <Form />
+            <Form setIsOpen={setIsOpen}/>
         </div>
     );
 }
