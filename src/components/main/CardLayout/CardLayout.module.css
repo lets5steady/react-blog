@@ -1,8 +1,7 @@
 .container{
-    max-width: 994px;
     margin-inline: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0,1fr);
     gap: var(--space-md);
 }
 
@@ -14,6 +13,7 @@
 
 @media (min-width: 768px) {
     .container{
+        max-width: 994px;
         grid-template-columns: repeat(3,1fr);
     }
 }

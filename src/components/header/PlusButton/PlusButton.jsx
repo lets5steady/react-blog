@@ -12,7 +12,7 @@ export default function PlusButton({ text = {}, isOpen, onToggle }) {
                     <rect x="8" y="20" width="20" height="4" transform="rotate(-90 8 20)" fill='currentColor' />
                 </svg>
 
-                <span className={isOpen ? styles.active : undefined}>{isOpen ? text.active : text.nomal}</span>
+                <span className={isOpen ? styles.active : styles.span}>{isOpen ? text.active : text.nomal}</span>
             </button>
         </>
     );

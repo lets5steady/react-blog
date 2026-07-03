@@ -10,14 +10,18 @@
 
 .btn{
     width: 20px;
-    transition: transform .3s ease-in-out;
     color: var(--main-color);
+    transition: transform .3s ease-in-out;
 }
 
 .close{
     composes: btn;
     transform: rotate(135deg);
     color: var(--base-color);
+}
+
+.span{
+    color: var(--main-color);
 }
 
 .active{

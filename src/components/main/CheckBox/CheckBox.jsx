@@ -1,3 +1,5 @@
+import styles from './CheckBox.module.css';
+
 export default function CheckBox({ options = [], form, setForm }) {
 
     const handleCheck = e => {
@@ -19,7 +21,7 @@ export default function CheckBox({ options = [], form, setForm }) {
     return (
         <>
             {options.map(option =>
-                <label key={option.id}>
+                <label key={option.id} className={styles.label}>
                     <input type="checkbox" name='favoriteField' id={option.id}
                         value={option.value}
                         onChange={handleCheck}
